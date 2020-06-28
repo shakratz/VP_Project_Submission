@@ -1,0 +1,4 @@
+Stabilization: 01:36
+Background Subtraction: 00:38
+Matting: 07:03
+Tracking: 00:13
