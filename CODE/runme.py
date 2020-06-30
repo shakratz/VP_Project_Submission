@@ -11,7 +11,6 @@ settings.init()
 # #### Manual Selections ####### #
 # Skip stabilization video (1-stabilize, 0-skip):
 Stabilize = 1
-
 # Manual tracking rectangle selection (1- manual, 0- automatic)
 ManualTracking = 0
 

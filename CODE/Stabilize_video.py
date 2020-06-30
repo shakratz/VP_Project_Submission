@@ -29,10 +29,10 @@ def removingBlackBorders(frame):
 
 def Stabilize_Video(input_video, output_video):
     # Parameters
-    maxCorners = 200
-    qualityLevel = 0.01
-    minDistance = 50
-    blockSize = 5
+    maxCorners = settings.maxCorners
+    qualityLevel = settings.qualityLevel
+    minDistance = settings.minDistance
+    blockSize = settings.blockSize
 
     # Read input
     cap = cv2.VideoCapture(input_video)

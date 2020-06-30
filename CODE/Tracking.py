@@ -7,8 +7,9 @@ import settings
 def tracking(ManualTracking):
     matted_video = settings.matted_name
     output_name = settings.output_name
+
     # unfortuntly only from the ~10th frame we have the full object
-    startFromFrameNum = 10
+    startFromFrameNum = settings.startFromFrameNum
 
     # Getting Video parameters
     cap = cv2.VideoCapture(matted_video)
