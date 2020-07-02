@@ -1,6 +1,7 @@
 from Stabilize_video import Stabilize_Video_Main
 from Background_Subtraction import backgroundSubtraction_Main
 from Matting import Matting_Main
+from Tracking_openCV import Tracking_Main_with_openCV
 from Tracking import Tracking_Main
 import numpy as np
 import settings
@@ -38,6 +39,7 @@ Matting_Main(All_transformations)
 # Input: Alpha, Stabilized, Background image
 # Output: OUTPUT(tracked)
 Tracking_Main(ManualTracking)
+#Tracking_Main_with_openCV(ManualTracking)  # Uncomment for tracking option 2
 
 
 

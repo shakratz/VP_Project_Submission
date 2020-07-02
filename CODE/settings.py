@@ -2,7 +2,7 @@ def init():
     global input_name, stabilized_name, output_name, background_name, binary_video
     global alpha_name, trimap_name, extracted_name, matted_name, transformations
     global inputdir, outdir, tempdir, Stabilization_iterations, unstabilized_alpha_name
-    global startFromFrameNum, maxCorners, qualityLevel, minDistance, blockSize
+    global startFromFrameNum, maxCorners, qualityLevel, minDistance, blockSize, resizeFactor
 
     inputdir = '../Input/' # The path to inputs
     input_name = inputdir + 'INPUT.avi'
@@ -21,11 +21,12 @@ def init():
     tempdir = '../Temp/' # The path to temp files
     transformations = tempdir + 'All_transformations.txt'
 
-    # Parameters
-    Stabilization_iterations = 4
-    startFromFrameNum = 10  # tracking starting frame
+    # Tracking Parameters
+    startFromFrameNum = 9  # tracking starting frame
+    resizeFactor = 3  # resize factor for tracking
 
     # Stabilization parameters
+    Stabilization_iterations = 4
     maxCorners = 200
     qualityLevel = 0.01
     minDistance = 50
